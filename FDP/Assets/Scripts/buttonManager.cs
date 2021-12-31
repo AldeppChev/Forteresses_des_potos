@@ -21,4 +21,10 @@ public class buttonManager : MonoBehaviour
         menuM.SetActive(true);
         menuP.SetActive(false);
     }
+
+    public void FindGame()
+    {
+        //Do something to notify the player we are looking for a game
+        networkManager.JoinOrCreate();
+    }
 }

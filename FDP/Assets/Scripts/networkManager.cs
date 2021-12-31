@@ -6,7 +6,7 @@ using Photon.Realtime;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class photonINIT : MonoBehaviourPunCallbacks
+public class networkManager : MonoBehaviourPunCallbacks
 {
     private void Awake()
     {
@@ -17,6 +17,11 @@ public class photonINIT : MonoBehaviourPunCallbacks
     {
         Debug.Log("PUN : Client connected to Master");
 
+        //PhotonNetwork.JoinRandomRoom();
+    }
+
+    public static void JoinOrCreate()
+    {
         PhotonNetwork.JoinRandomRoom();
     }
 
@@ -36,5 +41,6 @@ public class photonINIT : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("PUN : Client joined the room #" + PhotonNetwork.CurrentRoom.Name);
+        //Load Scene
     }
 }

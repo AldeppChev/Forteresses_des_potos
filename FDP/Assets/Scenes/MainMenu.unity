@@ -351,26 +351,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 327381246}
-  - component: {fileID: 327381245}
+  - component: {fileID: 327381247}
   m_Layer: 0
-  m_Name: NetworkManager
+  m_Name: networkManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &327381245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327381244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1a888cd882644cb920ccebf95cf32b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &327381246
 Transform:
   m_ObjectHideFlags: 0
@@ -384,8 +372,20 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &327381247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327381244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1a888cd882644cb920ccebf95cf32b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &469036098
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 469036100}
   - component: {fileID: 469036099}
   m_Layer: 0
-  m_Name: scenman
+  m_Name: sceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,7 +429,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &529186487
 GameObject:
@@ -1037,7 +1037,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1713073947
 GameObject:
@@ -1136,7 +1136,7 @@ RectTransform:
   - {fileID: 1867455056}
   - {fileID: 1805766673}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1874,7 +1874,7 @@ RectTransform:
   - {fileID: 2123978291}
   - {fileID: 941388600}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1981,7 +1981,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1713073952}
         m_TargetAssemblyTypeName: buttonManager, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: FindGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
