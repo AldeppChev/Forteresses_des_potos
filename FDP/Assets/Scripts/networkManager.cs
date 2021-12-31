@@ -42,5 +42,13 @@ public class networkManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("PUN : Client joined the room #" + PhotonNetwork.CurrentRoom.Name);
         //Load Scene
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log("Creating Level ...");
+            PhotonNetwork.LoadLevel("gameScene");
+        }
+        //Sync scenes (if Master load another Scene, other clients will too)
+        PhotonNetwork.AutomaticallySyncScene = true;
     }
 }
