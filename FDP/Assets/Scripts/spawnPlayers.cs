@@ -14,7 +14,11 @@ public class spawnPlayers : MonoBehaviour
     private void Awake()
     {
         playerGO = Resources.Load("player") as GameObject;
-        
-        //Determine local players spawnPoints
+
+        Transform sp = SpawnPoints[0];
+        if (!PhotonNetwork.IsMasterClient)
+            sp = SpawnPoints[1];
+
+        PhotonNetwork.Instantiate(playerGO.name, sp.position, Quaternion.identity);
     }
 }
